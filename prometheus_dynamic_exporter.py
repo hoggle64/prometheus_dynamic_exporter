@@ -45,6 +45,8 @@ class prometheus_dynamic_exporter(SimpleHTTPServer.SimpleHTTPRequestHandler):
     metrics = {}
     for dirpath,_,filenames in os.walk(config['global']['metricsdir']):
       for f in filenames:
+        if not f.endswith(".metric"):
+          continue
         filecount += 1
         file = os.path.abspath(os.path.join(dirpath, f))
         with open(file) as f:
