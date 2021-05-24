@@ -17,15 +17,21 @@ Change to the checkout directory
 ```cd prometheus_dynamic_exporter/```
 
 Open the file ```prometheus_dynamic_exporter.conf``` with an editor of your choice and change the properties to fulfil your needs.
+
 The settings explained in detail:
 
+```
 [global]
 Global settings go here.
 port = The TCP port the daemon should listen on.
-metricsdir = The directory where all the metric files are dropped. You can even create a directory structure with multiple files and dirs. All files with a .metric-Extension will be processed.
+metricsdir = The directory where all the metric files are dropped.
+You can even create a directory structure with multiple files and dirs.
+All files with a .metric-Extension will be processed
 
 [certificate]
-If you do not put your own certificates in place(see cert_file and key_file below) the daemon will create a self signed certificate at startup with the following infomation. You can always delete the cert_file and key_file and the daemon will recreate it.
+If you do not put your own certificates in place(see cert_file and key_file below)
+the daemon will create a self signed certificate at startup with the following infomation.
+You can always delete the cert_file and key_file and the daemon will recreate it.
 cert_file           = Filename of your certificate
 key_file            = Filename of your private key
 country             = Certificate Information: Country
@@ -42,4 +48,4 @@ password = basic auth password
 
 [log]
 All runtime informations are not written to stdout but written to a logfile which can be configured here.
-file = path to your logfile
+file = path to your logfile```
