@@ -20,13 +20,13 @@ class prometheus_dynamic_exporter(SimpleHTTPServer.SimpleHTTPRequestHandler):
     self.send_response(401)
     self.send_header('WWW-Authenticate', 'Basic realm=\"Authorize yourself\"')
     self.send_header('Content-Length',0)
-    self.send_header('Content-type', 'text/html')
+    self.send_header('Content-type', 'text/plain')
     self.end_headers()
 
   def do_HEAD(self,length, rc):
     logging.info('sending header')
     self.send_response(rc)
-    self.send_header('Content-type', 'text/html')
+    self.send_header('Content-type', 'text/plain')
     self.send_header('Content-Length',length)
     self.end_headers()
 

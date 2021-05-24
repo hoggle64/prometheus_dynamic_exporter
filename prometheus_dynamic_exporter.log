@@ -1,0 +1,188 @@
+2021-05-24 15:30:29,737  INFO      > logging initated
+2021-05-24 15:30:29,865  INFO      > Started httpserver on port 443
+2021-05-24 15:30:34,643  INFO      > user christian is trying to authenticate
+2021-05-24 15:30:34,643  INFO      > authentication successful
+2021-05-24 15:30:34,643  INFO      > user christian successfully authorized
+2021-05-24 15:30:34,644  WARNING   > no metrics found in configured metrics dir(./metrics)
+2021-05-24 15:30:34,644  INFO      > sending header
+2021-05-24 15:30:34,644  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:30:34,644  INFO      > request processing time: 0.002 seconds
+2021-05-24 15:30:34,786  INFO      > user christian is trying to authenticate
+2021-05-24 15:30:34,787  INFO      > authentication successful
+2021-05-24 15:30:34,787  INFO      > user christian successfully authorized
+2021-05-24 15:30:34,787  WARNING   > no metrics found in configured metrics dir(./metrics)
+2021-05-24 15:30:34,787  INFO      > sending header
+2021-05-24 15:30:34,788  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:30:34,788  INFO      > request processing time: 0.0019 seconds
+2021-05-24 15:30:38,718  INFO      > ^C received, shutting down the web server
+2021-05-24 15:32:41,721  INFO      > logging initated
+2021-05-24 15:32:41,724  INFO      > Started httpserver on port 443
+2021-05-24 15:32:46,749  INFO      > user christian is trying to authenticate
+2021-05-24 15:32:46,750  INFO      > authentication successful
+2021-05-24 15:32:46,750  INFO      > user christian successfully authorized
+2021-05-24 15:32:46,750  INFO      > sending header
+2021-05-24 15:32:46,751  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:32:46,751  INFO      > request processing time: 0.0024 seconds
+2021-05-24 15:32:46,931  INFO      > user christian is trying to authenticate
+2021-05-24 15:32:46,931  INFO      > authentication successful
+2021-05-24 15:32:46,932  INFO      > user christian successfully authorized
+2021-05-24 15:32:46,932  INFO      > sending header
+2021-05-24 15:32:46,932  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:32:46,933  INFO      > request processing time: 0.0017 seconds
+2021-05-24 15:32:50,758  INFO      > ^C received, shutting down the web server
+2021-05-24 15:33:21,593  INFO      > logging initated
+2021-05-24 15:33:21,595  INFO      > Started httpserver on port 443
+2021-05-24 15:33:23,492  INFO      > user christian is trying to authenticate
+2021-05-24 15:33:23,493  INFO      > authentication successful
+2021-05-24 15:33:23,493  INFO      > user christian successfully authorized
+2021-05-24 15:33:23,494  INFO      > sending header
+2021-05-24 15:33:23,494  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:33:23,494  INFO      > request processing time: 0.0024 seconds
+2021-05-24 15:33:23,647  INFO      > user christian is trying to authenticate
+2021-05-24 15:33:23,647  INFO      > authentication successful
+2021-05-24 15:33:23,648  INFO      > user christian successfully authorized
+2021-05-24 15:33:23,648  INFO      > sending header
+2021-05-24 15:33:23,648  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:33:23,649  INFO      > request processing time: 0.0016 seconds
+2021-05-24 15:33:24,408  INFO      > user christian is trying to authenticate
+2021-05-24 15:33:24,408  INFO      > authentication successful
+2021-05-24 15:33:24,409  INFO      > user christian successfully authorized
+2021-05-24 15:33:24,409  INFO      > sending header
+2021-05-24 15:33:24,409  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:33:24,410  INFO      > request processing time: 0.0015 seconds
+2021-05-24 15:33:24,567  INFO      > user christian is trying to authenticate
+2021-05-24 15:33:24,567  INFO      > authentication successful
+2021-05-24 15:33:24,567  INFO      > user christian successfully authorized
+2021-05-24 15:33:24,568  INFO      > sending header
+2021-05-24 15:33:24,568  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:33:24,568  INFO      > request processing time: 0.0016 seconds
+2021-05-24 15:33:27,765  INFO      > user christian is trying to authenticate
+2021-05-24 15:33:27,765  INFO      > authentication successful
+2021-05-24 15:33:27,766  INFO      > user christian successfully authorized
+2021-05-24 15:33:27,766  INFO      > sending header
+2021-05-24 15:33:27,766  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:33:27,767  INFO      > request processing time: 0.0018 seconds
+2021-05-24 15:33:27,890  INFO      > user christian is trying to authenticate
+2021-05-24 15:33:27,890  INFO      > authentication successful
+2021-05-24 15:33:27,890  INFO      > user christian successfully authorized
+2021-05-24 15:33:27,891  INFO      > sending header
+2021-05-24 15:33:27,891  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:33:27,891  INFO      > request processing time: 0.0016 seconds
+2021-05-24 15:38:05,244  INFO      > ^C received, shutting down the web server
+2021-05-24 15:39:40,707  INFO      > logging initated
+2021-05-24 15:39:40,710  INFO      > Started httpserver on port 443
+2021-05-24 15:39:47,569  INFO      > user christian is trying to authenticate
+2021-05-24 15:39:47,569  INFO      > authentication successful
+2021-05-24 15:39:47,569  INFO      > user christian successfully authorized
+2021-05-24 15:39:47,570  INFO      > sending header
+2021-05-24 15:39:47,570  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:39:47,571  INFO      > request processing time: 0.0027 seconds
+2021-05-24 15:39:47,637  INFO      > user christian is trying to authenticate
+2021-05-24 15:39:47,637  INFO      > authentication successful
+2021-05-24 15:39:47,637  INFO      > user christian successfully authorized
+2021-05-24 15:39:47,638  INFO      > sending header
+2021-05-24 15:39:47,638  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:39:47,639  INFO      > request processing time: 0.0018 seconds
+2021-05-24 15:39:48,769  INFO      > user christian is trying to authenticate
+2021-05-24 15:39:48,770  INFO      > authentication successful
+2021-05-24 15:39:48,770  INFO      > user christian successfully authorized
+2021-05-24 15:39:48,771  INFO      > sending header
+2021-05-24 15:39:48,771  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:39:48,772  INFO      > request processing time: 0.0022 seconds
+2021-05-24 15:39:48,847  INFO      > user christian is trying to authenticate
+2021-05-24 15:39:48,848  INFO      > authentication successful
+2021-05-24 15:39:48,848  INFO      > user christian successfully authorized
+2021-05-24 15:39:48,848  INFO      > sending header
+2021-05-24 15:39:48,848  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:39:48,849  INFO      > request processing time: 0.0017 seconds
+2021-05-24 15:39:52,009  INFO      > user christian is trying to authenticate
+2021-05-24 15:39:52,010  INFO      > authentication successful
+2021-05-24 15:39:52,010  INFO      > user christian successfully authorized
+2021-05-24 15:39:52,011  INFO      > sending header
+2021-05-24 15:39:52,011  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:39:52,013  INFO      > request processing time: 0.0036 seconds
+2021-05-24 15:39:52,199  INFO      > user christian is trying to authenticate
+2021-05-24 15:39:52,200  INFO      > authentication successful
+2021-05-24 15:39:52,200  INFO      > user christian successfully authorized
+2021-05-24 15:39:52,200  INFO      > sending header
+2021-05-24 15:39:52,201  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:39:52,201  INFO      > request processing time: 0.002 seconds
+2021-05-24 15:39:52,733  INFO      > user christian is trying to authenticate
+2021-05-24 15:39:52,733  INFO      > authentication successful
+2021-05-24 15:39:52,733  INFO      > user christian successfully authorized
+2021-05-24 15:39:52,734  INFO      > sending header
+2021-05-24 15:39:52,734  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:39:52,735  INFO      > request processing time: 0.0018 seconds
+2021-05-24 15:39:52,884  INFO      > user christian is trying to authenticate
+2021-05-24 15:39:52,884  INFO      > authentication successful
+2021-05-24 15:39:52,884  INFO      > user christian successfully authorized
+2021-05-24 15:39:52,885  INFO      > sending header
+2021-05-24 15:39:52,885  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:39:52,885  INFO      > request processing time: 0.0016 seconds
+2021-05-24 15:39:53,101  INFO      > user christian is trying to authenticate
+2021-05-24 15:39:53,102  INFO      > authentication successful
+2021-05-24 15:39:53,102  INFO      > user christian successfully authorized
+2021-05-24 15:39:53,102  INFO      > sending header
+2021-05-24 15:39:53,102  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:39:53,103  INFO      > request processing time: 0.0016 seconds
+2021-05-24 15:39:53,249  INFO      > user christian is trying to authenticate
+2021-05-24 15:39:53,249  INFO      > authentication successful
+2021-05-24 15:39:53,249  INFO      > user christian successfully authorized
+2021-05-24 15:39:53,250  INFO      > sending header
+2021-05-24 15:39:53,250  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:39:53,250  INFO      > request processing time: 0.0019 seconds
+2021-05-24 15:39:53,416  INFO      > user christian is trying to authenticate
+2021-05-24 15:39:53,416  INFO      > authentication successful
+2021-05-24 15:39:53,416  INFO      > user christian successfully authorized
+2021-05-24 15:39:53,416  INFO      > sending header
+2021-05-24 15:39:53,417  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:39:53,417  INFO      > request processing time: 0.0017 seconds
+2021-05-24 15:39:53,564  INFO      > user christian is trying to authenticate
+2021-05-24 15:39:53,564  INFO      > authentication successful
+2021-05-24 15:39:53,565  INFO      > user christian successfully authorized
+2021-05-24 15:39:53,565  INFO      > sending header
+2021-05-24 15:39:53,565  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:39:53,566  INFO      > request processing time: 0.0018 seconds
+2021-05-24 15:40:05,386  INFO      > ^C received, shutting down the web server
+2021-05-24 15:40:47,443  INFO      > logging initated
+2021-05-24 15:40:47,445  INFO      > Started httpserver on port 443
+2021-05-24 15:40:49,081  INFO      > user christian is trying to authenticate
+2021-05-24 15:40:49,081  INFO      > authentication successful
+2021-05-24 15:40:49,081  INFO      > user christian successfully authorized
+2021-05-24 15:40:49,083  INFO      > sending header
+2021-05-24 15:40:49,083  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:40:49,083  INFO      > request processing time: 0.0026 seconds
+2021-05-24 15:40:49,254  INFO      > user christian is trying to authenticate
+2021-05-24 15:40:49,254  INFO      > authentication successful
+2021-05-24 15:40:49,254  INFO      > user christian successfully authorized
+2021-05-24 15:40:49,255  INFO      > sending header
+2021-05-24 15:40:49,255  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:40:49,256  INFO      > request processing time: 0.0019 seconds
+2021-05-24 15:41:04,723  INFO      > user christian is trying to authenticate
+2021-05-24 15:41:04,723  INFO      > authentication successful
+2021-05-24 15:41:04,724  INFO      > user christian successfully authorized
+2021-05-24 15:41:04,724  INFO      > sending header
+2021-05-24 15:41:04,724  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:41:04,725  INFO      > request processing time: 0.0018 seconds
+2021-05-24 15:41:04,912  INFO      > user christian is trying to authenticate
+2021-05-24 15:41:04,912  INFO      > authentication successful
+2021-05-24 15:41:04,912  INFO      > user christian successfully authorized
+2021-05-24 15:41:04,913  INFO      > sending header
+2021-05-24 15:41:04,913  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:41:04,914  INFO      > request processing time: 0.0019 seconds
+2021-05-24 15:41:16,000  INFO      > ^C received, shutting down the web server
+2021-05-24 15:41:29,614  INFO      > logging initated
+2021-05-24 15:41:29,616  INFO      > Started httpserver on port 443
+2021-05-24 15:41:31,556  INFO      > user christian is trying to authenticate
+2021-05-24 15:41:31,556  INFO      > authentication successful
+2021-05-24 15:41:31,557  INFO      > user christian successfully authorized
+2021-05-24 15:41:31,558  INFO      > sending header
+2021-05-24 15:41:31,558  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:41:31,559  INFO      > request processing time: 0.0036 seconds
+2021-05-24 15:41:31,750  INFO      > user christian is trying to authenticate
+2021-05-24 15:41:31,750  INFO      > authentication successful
+2021-05-24 15:41:31,750  INFO      > user christian successfully authorized
+2021-05-24 15:41:31,751  INFO      > sending header
+2021-05-24 15:41:31,751  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:41:31,752  INFO      > request processing time: 0.0016 seconds
+2021-05-24 15:41:34,153  INFO      > ^C received, shutting down the web server
