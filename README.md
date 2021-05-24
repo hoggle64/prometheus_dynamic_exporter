@@ -2,7 +2,7 @@
 A dynamic metric exporter for Prometheus. Serve your custom metrics via https and basic authenticaiton by adding values in textfiles.
 
 # What is this ?
-This python script can be used to easily export simple metrics(key/value). You can then easily "scrape" those metrics to process them with Prometheus. Just put one or more metric files in the configured metrics directory and the daemon process will serve them via https protected with basic auth.
+This python daemon can be used to easily export simple metrics(key/value). You can then easily "scrape" those metrics to process them with Prometheus. Just put one or more metric files in the configured metrics directory and the daemon process will serve them via https protected with basic auth.
 
 # Why was this developed ?
 I was looking for a very simple way to feed different custom metrics easily to Prometheus by just dropping key/value pairs in textfiles inside a directory.
