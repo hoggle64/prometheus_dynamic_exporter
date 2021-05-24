@@ -1,0 +1,12 @@
+[Unit]
+Description=Prometheus Dynamic Metric Exporter
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /opt/prometheus_dynamic_exporter/prometheus_dynamic_exporter.py
+WorkingDirectory=/opt/prometheus_dynamic_exporter
+User=root
+
+[Install]
+WantedBy=multi-user.target
