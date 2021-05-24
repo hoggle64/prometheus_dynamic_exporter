@@ -115,4 +115,4 @@ To run the daemon in the background as a systemd service execute the following s
 ### start the service
 ```systemctl start prometheus_dynamic_exporter.service```
 ### check the service status
-systemctl status prometheus_dynamic_exporter.service```
+```systemctl status prometheus_dynamic_exporter.service```
