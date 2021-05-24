@@ -36,6 +36,7 @@ The settings explained in detail:
 ```
 [global]
 Global settings go here.
+bindto = The listener address. Set this to 0.0.0.0 to listen on all interfaces.
 port = The TCP port the daemon should listen on.
 metricsdir = The directory where all the metric files are dropped.
 You can even create a directory structure with multiple files and dirs.
