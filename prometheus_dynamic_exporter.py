@@ -74,7 +74,7 @@ class prometheus_dynamic_exporter(SimpleHTTPServer.SimpleHTTPRequestHandler):
         if len(metrics) == 0:
           logging.warn('no metrics found in configured metrics dir(' + config['global']['metricsdir'] + ')')
         for metric in metrics:
-          response += metric + '=' + metrics[metric]
+          response += metric + ' ' + metrics[metric]
         self.do_HEAD(len(response),200)
         self.wfile.write(response)
       else:
