@@ -63,7 +63,7 @@ file = path to your logfile
 ```
 ## Start the daemon as root
 Make the python file executeable (```chmod +x prometheus_dynamic_exporter.py```) and fire it up as **root** user(```sudo ./prometheus_dynamic_exporter.py```).
-(If you change the port to some value above 1024 you can run it without root privileges.)
+If you change the port to some value above 1024 you can run it without root privileges.
 If everything is good the command should **not** return now. If it does take a look at the logfile which you configured before.
 
 # Check out your metrics
