@@ -7,6 +7,15 @@ This python script can be used to easily export simple metrics(key/value). You c
 # Why was this developed ?
 I was looking for a very simple way to feed different custom metrics easily to Prometheus by just dropping key/value pairs in textfiles inside a directory.
 
+# Requirements
+I tested this on Ubuntu 20.04 and Mint 20.1
+## Python2 ##
+(might work with Python3 with some modifications)
+## Python modules  ##
+I needed to install 2 additional Python modules. This might be different on your system.
+- ### python-openssl
+- ### python-configparser
+
 # Getting started
 Checkout the repo content to an appropriate directory of your choice.
 
@@ -48,4 +57,12 @@ password = basic auth password
 
 [log]
 All runtime informations are not written to stdout but written to a logfile which can be configured here.
-file = path to your logfile```
+file = path to your logfile
+```
+## Start the daemon as root
+Make the python file executeable (```chmod +x prometheus_dynamic_exporter.py```) and fire it up(```sudo ./prometheus_dynamic_exporter.py```).
+If everything is good the command should *not* return now. If it does take a look at the logfile which you configured before.
+
+# Check out your metrics
+Point your webbrowser to your host where the daemon is running by typing:  https://yourhost/.
+If you are using the self signed certificate you should now see a security warning. Click on accept and proceed. Now you should see the basic auth popup window asking for your configured username+password you configured already. Type in your credentails and proceed. Now you should be able to see your configured metrics.
