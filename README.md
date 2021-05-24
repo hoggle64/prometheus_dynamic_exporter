@@ -74,7 +74,7 @@ Now you should see the basic auth popup window asking for your configured userna
 Type in your credentails and proceed. Now you should be able to see your configured metrics.  
 
 # How do I scrape this stuff in Prometheus now ?
-Simple. Here is a config example for a Prometheus job_name which will work with your daemon:
+Simple. Here is a config example(prometheus.yml) for a Prometheus job_name which will work with your daemon:
 
 ```
   - job_name: 'my_first_custom_metrics'
