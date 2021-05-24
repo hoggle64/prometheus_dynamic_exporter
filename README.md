@@ -1,3 +1,5 @@
+![alt text](https://github.com/hoggle64/prometheus_dynamic_exporter/blob/[branch]/prometheus_dynamic_exporter.jpg?raw=true)
+
 # Prometheus Dynamic Exporter
 A dynamic metric exporter for Prometheus. Serve your custom metrics via https and basic authenticaiton by adding values in textfiles.
 
