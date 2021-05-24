@@ -1,7 +1,7 @@
 ![alt text](https://github.com/hoggle64/prometheus_dynamic_exporter/blob/main/prometheus_dynamic_exporter.png?raw=true)
 
 # Prometheus Dynamic Exporter
-A dynamic file based metric exporter for Prometheus. Serve your custom metrics via https and basic authenticaiton by adding values in textfiles.
+A dynamic file based metric exporter for Prometheus. Serve your custom metrics via https and basic authenticaiton by adding values in simple textfiles.
 
 # What is this ?
 This python daemon can be used to export custom metrics(key/value). You can then easily "scrape" those metrics to process them with Prometheus. Just put one or more metric files in the configured metrics directory and the daemon process will serve them via https protected with basic auth.
