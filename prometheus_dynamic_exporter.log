@@ -231,3 +231,18 @@
 2021-05-24 15:44:45,261  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
 2021-05-24 15:44:45,262  INFO      > request processing time: 0.0018 seconds
 2021-05-24 15:44:49,536  INFO      > ^C received, shutting down the web server
+2021-05-24 15:45:33,442  INFO      > logging initated
+2021-05-24 15:45:33,445  INFO      > Started httpserver on port 443
+2021-05-24 15:45:36,179  INFO      > user christian is trying to authenticate
+2021-05-24 15:45:36,180  INFO      > authentication successful
+2021-05-24 15:45:36,180  INFO      > user christian successfully authorized
+2021-05-24 15:45:36,180  INFO      > sending header
+2021-05-24 15:45:36,181  INFO      > incoming request: ('GET / HTTP/1.1', '200', '-')
+2021-05-24 15:45:36,181  INFO      > request processing time: 0.002 seconds
+2021-05-24 15:45:36,330  INFO      > user christian is trying to authenticate
+2021-05-24 15:45:36,330  INFO      > authentication successful
+2021-05-24 15:45:36,331  INFO      > user christian successfully authorized
+2021-05-24 15:45:36,331  INFO      > sending header
+2021-05-24 15:45:36,331  INFO      > incoming request: ('GET /favicon.ico HTTP/1.1', '200', '-')
+2021-05-24 15:45:36,332  INFO      > request processing time: 0.0021 seconds
+2021-05-24 15:50:27,710  INFO      > ^C received, shutting down the web server
