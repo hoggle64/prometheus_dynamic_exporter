@@ -108,4 +108,11 @@ To run the daemon in the background as a systemd service execute the following s
 ```mv ....change_this_to_your_path.../prometheus_dynamic_exporter/ /opt/```
 ### set owner root for the new folder
 ```chown -R root.root /opt/prometheus_dynamic_exporter/```
-
+### copy the unit file to the systemd service folder
+```cp /opt/prometheus_dynamic_exporter/prometheus_dynamic_exporter.service /lib/systemd/system/```
+### enable the service
+```systemctl enable prometheus_dynamic_exporter.service```
+### start the service
+```systemctl start prometheus_dynamic_exporter.service```
+### check the service status
+systemctl status prometheus_dynamic_exporter.service```
