@@ -1,3 +1,4 @@
 *.crt
 *.key
 *.log
+prometheus_dynamic_exporter.png

@@ -13,6 +13,8 @@ import logging
 import time
 import sys
 import getpass
+import datetime
+import time
 
 class prometheus_dynamic_exporter(SimpleHTTPServer.SimpleHTTPRequestHandler):
 
@@ -65,15 +67,39 @@ class prometheus_dynamic_exporter(SimpleHTTPServer.SimpleHTTPRequestHandler):
         for f in filenames:
           if not f.endswith(".metric"):
             continue
-          logging.info('scanning file: ' + f)
           filecount += 1
           file = os.path.abspath(os.path.join(dirpath, f))
+          logging.info('scanning file: ' + file)
+          ctime = os.path.getctime(file)
+          now   = time.mktime(datetime.datetime.now().timetuple())
+          age = int(round((now - ctime),0))
+          logging.info('age of metric file: ' + str(age))
           with open(file) as f:
             lines = f.readlines()
+            data = {}
+            ttl = int(config['global']['default_ttl'])
             for line in lines:
               linecount += 1
-              metric = re.split(':|=',line)
-              metrics[metric[0]] = metric[1]
+              metric = [x.strip() for x in line.split('=')]
+              if metric[0] == 'ttl':
+                ttl = int(metric[1])
+                logging.info('custom file ttl found: ' + str(ttl) + ' seconds')
+              else:
+                data[metric[0]] = metric[1]
+            logging.info('ttl of file: ' + str(ttl) + ' seconds')
+            if age > ttl:
+              logging.info('metrics file reached end of life: ' + file)
+              if 'delete_on_eol' in config['global'] and config['global']['delete_on_eol'] == 1:
+                logging.info('deleting file')
+                os.unlink(file)
+            else:
+              logging.info('ttl in range. file will be processed.')
+              for d in data:
+                if d in metrics:
+                  logging.warn('duplicate metric found: ' + d)
+                  logging.warn('skipping entry')
+                else:
+                  metrics[d] = data[d]
     except Exception as e:
       logging.error('error reading metric file(s)')
       logging.error(repr(e))
@@ -108,7 +134,7 @@ class prometheus_dynamic_exporter(SimpleHTTPServer.SimpleHTTPRequestHandler):
         if len(metrics) == 0:
           logging.warn('no metrics found in configured metrics dir(' + config['global']['metricsdir'] + ')')
         for metric in metrics:
-          response += metric + ' ' + metrics[metric]
+          response += metric + ' ' + metrics[metric] + '\n'
         self.do_HEAD(len(response),200)
         self.wfile.write(response)
       else:
