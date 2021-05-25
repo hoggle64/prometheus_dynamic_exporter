@@ -41,6 +41,9 @@ port = The TCP port the daemon should listen on.
 metricsdir = The directory where all the metric files are dropped.
 You can even create a directory structure with multiple files and dirs.
 All files with a .metric-Extension will be processed
+default_ttl = default lifetime in seconds of a metricfile. Checks the last change timestamp of the file
+You can overwrite this value in every metricfile by setting ttl to another value.
+delete_on_eol = If this is set to 1 a metricfile will automatically deleted once it reaches its end of life time
 
 [certificate]
 If you do not put your own certificates in place(see cert_file and key_file below)
@@ -96,6 +99,14 @@ Simple. Here is a config example(prometheus.yml) for a Prometheus job_name which
 
 Make sure to change the hostname in the "targets"-list. Change username+password like you've configured in basic auth before.
 Make sure to set the insecure_skip_verify part to true if you are using the self singed certificate. Also notice that the scheme is set to https.
+
+# Time to live
+There is a build in mechanism which makes sure no old data will be read.
+E.g. imagine your cronjob producing metric files will fail for some reason at some point in time.
+The last generated metric would be read over and over again and would result in a "flat line" in Prometheues which is bad.
+You can set your time to live for your metric file inside the file by just adding a line "ttl = 10 seconds".
+This would make sure that the file will only be processed 10 seconds after it was created.
+If you set delete_on_eol to 1 the file will additionally be deleted after 10 seconds.
 
 # And now ? Add more metrics !
 Just drop more textfiles in your configured metrics directory. Make sure you use the *.metrics* file extension. Inside your .metrics files simply add key values pairs like this:
