@@ -108,7 +108,7 @@ E.g. imagine your cronjob producing metric files will fail for some reason at so
 The last generated metric would be read over and over again and would result in a "flat line" in Prometheues which is bad.
 You can set your time to live for your metric file inside the file by just adding a line "ttl = 10".
 This would make sure that the file will only be processed 10 seconds after it was created.
-If you set delete_on_eol to 1 the file will additionally be deleted after 10 seconds.
+If you set "delete_on_eol" to 1, the file will additionally be deleted after 10 seconds.
 
 # And now ? Add more metrics !
 Just drop more textfiles in your configured metrics directory. Make sure you use the *.metrics* file extension. Inside your .metrics files simply add key values pairs like this:
